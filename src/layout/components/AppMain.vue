@@ -1,5 +1,5 @@
 <template>
-	<div class="app-main">123</div>
+	<div class="app-main">AppMain</div>
 </template>
 
 <script>
@@ -9,8 +9,14 @@
 </script>
 
 <style lang='scss' scoped>
+	@import '~@/styles/variables.scss';
 	.app-main {
-		width: 100%;
-		height: 100%;
+		min-height: calc(100vh - 50px);
+		width: calc(100vw - 210px);
+		position: relative;
+		left: $sideBarWidth;
+		overflow: hidden;
+		padding: 61px 20px 20px 20px;
+		box-sizing: border-box;
 	}
 </style>

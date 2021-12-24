@@ -1,5 +1,5 @@
 <template>
-	<div class="navbar">123</div>
+	<div class="navbar">Navbar</div>
 </template>
 
 <script>
@@ -10,8 +10,10 @@
 
 <style lang='scss' scoped>
 	.navbar {
-		width: calc(100% - 210px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
 		height: 50px;
-		background-color: pink;
 	}
 </style>

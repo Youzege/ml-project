@@ -1,5 +1,5 @@
 <template>
-	<div class="sidebar">123</div>
+	<div class="sidebar-container">Sidebar</div>
 </template>
 
 <script>
@@ -9,9 +9,12 @@
 </script>
 
 <style lang='scss' scoped>
-	.sidebar {
-		width: 210px;
-		height: 100vh;
-		background-color: orange;
+	@import '~@/styles/variables.scss';
+	.sidebar-container {
+		width: $sideBarWidth !important;
+		height: calc(100vh - 50px);
+		position: fixed;
+		z-index: 1001;
+		overflow: hidden;
 	}
 </style>

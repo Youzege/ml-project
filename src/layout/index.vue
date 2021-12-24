@@ -1,14 +1,13 @@
 <template>
 	<div class="app-wrapper">
-		<!-- 左侧 侧边栏-->
-		<sidebar />
-		<!-- 右侧 -->
+		<!-- 顶部 -->
+		<div class="fixed-header">
+			<navbar />
+		</div>
 		<div class="main-container">
-			<!-- 顶部 -->
-			<div class="fixed-header">
-				<navbar />
-			</div>
-			<!-- 内容 -->
+			<!-- 左侧 侧边栏-->
+			<sidebar />
+			<!-- 右侧 内容 -->
 			<app-main />
 		</div>
 	</div>
@@ -28,6 +27,7 @@
 
 <style lang='scss' scoped>
 	@import '~@/styles/mixin.scss';
+	@import '~@/styles/variables.scss';
 	.app-wrapper {
 		@include clearfix;
 		@include relative;
