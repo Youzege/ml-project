@@ -13,7 +13,7 @@
 		</el-submenu>
 		<el-menu-item index="2">
 			<i class="el-icon-menu"></i>
-			<span slot="title">echarts组件</span>
+			<span slot="title">Echarts组件</span>
 		</el-menu-item>
 	</div>
 </template>
