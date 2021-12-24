@@ -12,7 +12,7 @@
 	@import '~@/styles/variables.scss';
 	.sidebar-container {
 		width: $sideBarWidth !important;
-		height: calc(100vh - 50px);
+		height: calc(100vh - 60px);
 		position: fixed;
 		z-index: 1001;
 		overflow: hidden;
