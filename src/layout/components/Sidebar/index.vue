@@ -1,10 +1,19 @@
 <template>
-	<div class="sidebar-container">Sidebar</div>
+	<div class="sidebar-container">
+		<h3 class="title">components</h3>
+		<el-scrollbar>
+			<sidebar-menu />
+		</el-scrollbar>
+	</div>
 </template>
 
 <script>
+	import SidebarMenu from './SidebarMenu.vue'
 	export default {
-		name: 'Sidebar'
+		name: 'Sidebar',
+		components: {
+			SidebarMenu
+		}
 	}
 </script>
 
@@ -16,5 +25,9 @@
 		position: fixed;
 		z-index: 1001;
 		overflow: hidden;
+		.title {
+			margin-top: 15px;
+			text-align: center;
+		}
 	}
 </style>
