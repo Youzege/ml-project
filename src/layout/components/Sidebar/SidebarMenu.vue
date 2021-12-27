@@ -1,5 +1,5 @@
 <template>
-	<el-menu default-active="" active-text-color="orange" router>
+	<el-menu :default-active="currentRoute" active-text-color="orange" router>
 		<sidebar-item v-for="item in menuList" :key="item.path" :item="item" />
 	</el-menu>
 </template>
@@ -14,7 +14,8 @@
 		},
 		data() {
 			return {
-				menuList: []
+				menuList: [],
+				currentRoute: null
 			}
 		},
 		methods: {
@@ -22,11 +23,14 @@
 				const routes = this.$router.options.routes
 				const result = filterRoutes(routes)
 				this.menuList = result
-				console.log(result)
+			},
+			currentPath() {
+				this.currentRoute = this.$route.path
 			}
 		},
 		mounted() {
 			this.getMenuList()
+			this.currentPath()
 		}
 	}
 </script>

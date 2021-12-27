@@ -1,6 +1,6 @@
 <template>
 	<div class="sidebar-container">
-		<h3 class="title">components</h3>
+		<h3 class="title"><i class="el-icon-s-platform"></i>前端组件</h3>
 		<el-scrollbar>
 			<sidebar-menu />
 		</el-scrollbar>
@@ -27,7 +27,7 @@
 		overflow: hidden;
 		border-right: solid 1px #e6e6e6;
 		.title {
-			margin-top: 15px;
+			margin-top: 25px;
 			text-align: center;
 		}
 	}

@@ -1,18 +1,19 @@
 <template>
 	<el-card class="box-card">
 		<div slot="header" class="clearfix">
-			<span>组件名称</span>
-			<el-button style="float: right; padding: 3px 0" type="text"
-				>组件路径</el-button
-			>
+			<breadcrumb />
 		</div>
 		<router-view class="card-main"></router-view>
 	</el-card>
 </template>
 
 <script>
+	import Breadcrumb from '@/layout/components/Breadcrumb/index'
 	export default {
-		name: ''
+		name: 'Card',
+		components: {
+			Breadcrumb
+		}
 	}
 </script>
 

@@ -1,10 +1,6 @@
 <template>
 	<div class="welcome">
-		<img
-			class="logo"
-			src="https://cdn.jsdelivr.net/gh/Youzege/my-imgs@main/logo/pet-logo-12.png"
-			alt="logo"
-		/>
+		<div class="logo"></div>
 	</div>
 </template>
 
@@ -20,11 +16,15 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		min-height: calc(100vh - 210px);
+		height: calc(100vh - 210px);
 		.logo {
 			display: inline-block;
-			width: 50vw;
-			height: 70vh;
+			width: 100%;
+			height: inherit;
+			background-image: url(https://cdn.jsdelivr.net/gh/Youzege/my-imgs@main/logo/pet-logo-3.png);
+			background-size: contain;
+			background-position: 50%;
+			background-repeat: no-repeat;
 		}
 	}
 </style>

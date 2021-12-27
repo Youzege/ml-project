@@ -8,6 +8,9 @@ const publicRoutes = [
     children: [
       {
         path: '/welcome',
+        meta: {
+          navName: '首页'
+        },
         component: () => import('@/views/Welcome/index')
       }
     ]
