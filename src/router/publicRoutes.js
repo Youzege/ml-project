@@ -1,3 +1,4 @@
+import leafletRoutes from './leafletRoutes'
 const publicRoutes = [
   {
     path: '/',
@@ -8,7 +9,8 @@ const publicRoutes = [
         path: '/welcome',
         component: () => import('@/views/Welcome/index')
       }
-    ]
+    ],
+    ...leafletRoutes
   }
 ]
 
