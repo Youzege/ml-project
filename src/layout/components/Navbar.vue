@@ -19,11 +19,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
 		padding: 0 10px;
 		box-sizing: border-box;
 		width: 100%;
 		height: 60px;
 		background: rgb(255, 166, 0, 0.5);
+		overflow: hidden;
 		.left-content {
 			display: flex;
 			align-items: center;

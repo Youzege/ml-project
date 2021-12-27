@@ -22,9 +22,10 @@
 	.sidebar-container {
 		width: $sideBarWidth !important;
 		height: calc(100vh - 60px);
-		position: fixed;
+		position: absolute;
 		z-index: 1001;
 		overflow: hidden;
+		border-right: solid 1px #e6e6e6;
 		.title {
 			margin-top: 15px;
 			text-align: center;

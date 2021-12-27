@@ -1,10 +1,16 @@
 <template>
-	<div class="app-main">AppMain</div>
+	<div class="app-main">
+		<card />
+	</div>
 </template>
 
 <script>
+	import Card from './Card'
 	export default {
-		name: 'AppMain'
+		name: 'AppMain',
+		components: {
+			Card
+		}
 	}
 </script>
 
@@ -13,10 +19,11 @@
 	.app-main {
 		min-height: calc(100vh - 60px);
 		width: calc(100vw - 210px);
-		position: relative;
+		position: absolute;
 		left: $sideBarWidth;
 		overflow: hidden;
-		padding: 61px 20px 20px 20px;
+		padding: 30px 20px 20px 20px;
 		box-sizing: border-box;
+		overflow: hidden;
 	}
 </style>

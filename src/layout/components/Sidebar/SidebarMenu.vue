@@ -1,9 +1,5 @@
 <template>
-	<el-menu
-		default-active="2"
-		class="el-menu-vertical-demo"
-		active-text-color="orange"
-	>
+	<el-menu default-active="1-1" active-text-color="orange" router>
 		<sidebar-item />
 	</el-menu>
 </template>
@@ -19,4 +15,7 @@
 </script>
 
 <style lang='scss' scoped>
+	.el-menu {
+		border: none;
+	}
 </style>
