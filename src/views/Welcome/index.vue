@@ -10,11 +10,7 @@
 
 <script>
 	export default {
-		name: 'Welcome',
-		mounted() {
-			console.log(this.$router)
-			console.log(this.$route)
-		}
+		name: 'Welcome'
 	}
 </script>
 

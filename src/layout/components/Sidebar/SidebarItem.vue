@@ -1,26 +1,31 @@
 <template>
 	<div>
-		<el-submenu index="1">
+		<el-submenu v-if="item.children" :index="item.path">
 			<template slot="title">
-				<i class="el-icon-location"></i>
-				<span>Leaflet组件</span>
+				<i :class="item.meta.icon"></i>
+				<span>{{ item.meta.navName }}</span>
 			</template>
-			<el-menu-item-group>
-				<template slot="title">组件列表</template>
-				<el-menu-item index="1-1">组件1</el-menu-item>
-				<el-menu-item index="1-2">组件2</el-menu-item>
-			</el-menu-item-group>
+			<sidebar-item
+				v-for="item in item.children"
+				:key="item.path"
+				:item="item"
+			></sidebar-item>
 		</el-submenu>
-		<el-menu-item index="2">
-			<i class="el-icon-menu"></i>
-			<span slot="title">Echarts组件</span>
+		<el-menu-item v-else :index="item.path">
+			<template #title>{{ item.meta.navName }}</template>
 		</el-menu-item>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'SidebarItem'
+		name: 'SidebarItem',
+		props: {
+			item: {
+				type: Object,
+				required: true
+			}
+		}
 	}
 </script>
 

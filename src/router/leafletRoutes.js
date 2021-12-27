@@ -1,16 +1,18 @@
 const leafletRoutes = [
   {
     path: '/leaflet',
+    component: () => import('@/layout/index'),
     meta: {
       navName: 'Leaflet',
       icon: 'el-icon-location'
     },
     children: [
       {
-        path: 'tianditu',
+        path: 'BaseMap',
         meta: {
-          navName: '天地图'
-        }
+          navName: '地图地图'
+        },
+        component: () => import('@/views/Leaflet/components/BaseMap')
       }
     ]
   }

@@ -1,6 +1,7 @@
 const echartsRoutes = [
   {
     path: '/echarts',
+    component: () => import('@/layout/index'),
     meta: {
       navName: 'Echarts',
       icon: 'el-icon-s-data'
