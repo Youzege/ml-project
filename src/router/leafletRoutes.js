@@ -1,8 +1,18 @@
 const leafletRoutes = [
   {
     path: '/leaflet',
-    redirect: '',
-    children: [{}]
+    meta: {
+      navName: 'Leaflet',
+      icon: 'el-icon-location'
+    },
+    children: [
+      {
+        path: 'tianditu',
+        meta: {
+          navName: '天地图'
+        }
+      }
+    ]
   }
 ]
 

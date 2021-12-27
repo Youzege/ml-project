@@ -10,7 +10,13 @@
 		name: 'SidebarMenu',
 		components: {
 			SidebarItem
-		}
+		},
+		data() {
+			return {
+				menuList: []
+			}
+		},
+		methods: {}
 	}
 </script>
 

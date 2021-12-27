@@ -1,3 +1,4 @@
+import echartsRoutes from './echartsRoutes'
 import leafletRoutes from './leafletRoutes'
 const publicRoutes = [
   {
@@ -9,9 +10,10 @@ const publicRoutes = [
         path: '/welcome',
         component: () => import('@/views/Welcome/index')
       }
-    ],
-    ...leafletRoutes
-  }
+    ]
+  },
+  ...leafletRoutes,
+  ...echartsRoutes
 ]
 
 export default publicRoutes
