@@ -1,7 +1,7 @@
 export const tiandituLayer = (L) => {
   const mapKey = '40e50cca6823476482e8721bb2eee900'
   const mapUrl =
-    'http://t0.tianditu.com/DataServer?T={id}_w&x={x}&y={y}&l={z}&tk={tk}'
+    'http://t7.tianditu.com/DataServer?T={id}_w&x={x}&y={y}&l={z}&tk={tk}'
 
   const layerVec = L.tileLayer(mapUrl, {
     attribution: '简单组件库~ <a>@author youzge</a>',
