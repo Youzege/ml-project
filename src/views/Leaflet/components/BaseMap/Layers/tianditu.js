@@ -4,7 +4,7 @@ export const tiandituLayer = (L) => {
     'http://t0.tianditu.com/DataServer?T={id}_w&x={x}&y={y}&l={z}&tk={tk}'
 
   const layerVec = L.tileLayer(mapUrl, {
-    attribution: '这是小森林~ <a>@author youzge</a>',
+    attribution: '简单组件库~ <a>@author youzge</a>',
     tileSize: 512,
     zoomOffset: -1,
     id: 'vec',

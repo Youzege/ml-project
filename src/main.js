@@ -2,7 +2,7 @@ import '@/assets/iconfont/index.css'
 import '@/styles/index.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import L from 'leaflet'
+import * as L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import Vue from 'vue'
 import App from './App.vue'
@@ -13,6 +13,13 @@ Vue.config.productionTip = false
 
 // Vue.prototype.$L = L
 Vue.L = Vue.prototype.$L = L
+/* leaflet icon 解决webpack编译成base64无法找到marker图标问题 */
+delete L.Icon.Default.prototype._getIconUrl
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+})
 
 Vue.use(ElementUI, { size: 'small' })
 
