@@ -39,7 +39,7 @@
 
 <style lang='scss' scoped>
 	.mychart {
-		width: 500px;
+		width: 100%;
 		height: 500px;
 	}
 </style>

@@ -8,14 +8,14 @@ const echartsRoutes = [
     },
     children: [
       {
-        path: 'basicLineChart',
+        path: 'basic-line-chart',
         meta: {
           navName: '基础折线图'
         },
         component: () => import('@/views/Echarts/components/BasicLineChart')
       },
       {
-        path: 'basicBar',
+        path: 'basic-bar',
         meta: {
           navName: '基础柱状图'
         },

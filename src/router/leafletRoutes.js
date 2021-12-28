@@ -8,21 +8,21 @@ const leafletRoutes = [
     },
     children: [
       {
-        path: 'BaseMap',
+        path: 'base-map',
         meta: {
           navName: '地图地图'
         },
         component: () => import('@/views/Leaflet/components/BaseMap')
       },
       {
-        path: 'Marker',
+        path: 'marker',
         meta: {
           navName: '标记'
         },
         component: () => import('@/views/Leaflet/components/Marker')
       },
       {
-        path: 'Location',
+        path: 'location',
         meta: {
           navName: '定位'
         },
