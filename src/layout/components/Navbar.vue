@@ -4,7 +4,18 @@
 			<img class="dog-img" src="./../../assets/dog-icon.png" alt="dog" />
 			<span class="title">Map Components</span>
 		</div>
-		<div class="right-content">...</div>
+		<div class="right-content">
+			<el-tooltip
+				class="item"
+				effect="light"
+				content="项目主页"
+				placement="bottom-start"
+			>
+				<a href="https://github.com/Youzege/ml-project" class="home-icon">
+					<i class="iconfont icon-github1"></i
+				></a>
+			</el-tooltip>
+		</div>
 	</div>
 </template>
 
@@ -15,6 +26,7 @@
 </script>
 
 <style lang='scss' scoped>
+	@import url(//at.alicdn.com/t/font_3078636_nflutq35slq.css);
 	.navbar {
 		display: flex;
 		justify-content: space-between;
@@ -38,6 +50,10 @@
 				font-weight: 550;
 				opacity: 0.8;
 			}
+		}
+		.icon-github1 {
+			padding-right: 10px;
+			font-size: 28px;
 		}
 	}
 </style>
