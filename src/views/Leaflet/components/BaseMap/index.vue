@@ -19,7 +19,7 @@
 					minZoom: 2
 				}).setView([23.1520135, 113.3231695], 12) // 设置中心点，缩放级别)
 				tiandituLayer(L).addTo(this.map)
-				console.log(this.map)
+				console.log('map=>', this.map)
 			}
 		},
 		mounted() {
