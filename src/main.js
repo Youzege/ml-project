@@ -1,11 +1,12 @@
+import '@/assets/iconfont/index.css'
 import '@/styles/index.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 'leaflet/dist/leaflet.css'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import '@/assets/iconfont/index.css'
 
 Vue.config.productionTip = false
 
