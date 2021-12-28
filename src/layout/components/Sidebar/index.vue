@@ -1,6 +1,6 @@
 <template>
 	<div class="sidebar-container">
-		<h3 class="title"><i class="el-icon-s-platform"></i>前端组件</h3>
+		<h3 class="title"><i class="el-icon-s-platform"></i>前端可视化</h3>
 		<el-scrollbar>
 			<sidebar-menu />
 		</el-scrollbar>

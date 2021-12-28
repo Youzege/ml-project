@@ -2,16 +2,20 @@
 	<div class="navbar">
 		<div class="left-content">
 			<img class="dog-img" src="./../../assets/dog-icon.png" alt="dog" />
-			<span class="title">Map Components</span>
+			<span class="title">Leaflet & Echarts</span>
 		</div>
 		<div class="right-content">
 			<el-tooltip
 				class="item"
 				effect="light"
-				content="项目主页"
+				content="项目仓库"
 				placement="bottom-start"
 			>
-				<a href="https://github.com/Youzege/ml-project" class="home-icon">
+				<a
+					href="https://github.com/Youzege/ml-project"
+					target="_blank"
+					class="home-icon"
+				>
 					<i class="iconfont icon-github1"></i
 				></a>
 			</el-tooltip>
