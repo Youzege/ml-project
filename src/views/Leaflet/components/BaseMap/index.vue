@@ -3,7 +3,7 @@
 </template>
 
 <script>
-	import { tiandituLayer } from './Layers/tianditu'
+	import { amapLayer } from './Layers'
 	export default {
 		name: 'BaseMap',
 		data() {
@@ -18,7 +18,7 @@
 					maxZoom: 18,
 					minZoom: 2
 				}).setView([23.1520135, 113.3231695], 12) // 设置中心点，缩放级别)
-				tiandituLayer(L).addTo(this.map)
+				amapLayer(L).addTo(this.map)
 				this.$emit('lmap', this.map)
 			}
 		},

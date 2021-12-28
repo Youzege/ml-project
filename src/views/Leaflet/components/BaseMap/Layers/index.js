@@ -1,3 +1,6 @@
+/**
+ * 天地图
+ */
 export const tiandituLayer = (L) => {
   const mapKey = '40e50cca6823476482e8721bb2eee900'
   const mapUrl =
@@ -19,4 +22,17 @@ export const tiandituLayer = (L) => {
   })
   const tiandituLayer = L.layerGroup([layerVec, layerCva])
   return tiandituLayer
+}
+
+/**
+ * 高德地图
+ */
+export const amapLayer = (L) => {
+  const amap = L.tileLayer(
+    'http://wprd0{s}.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=7',
+    {
+      subdomains: '1234'
+    }
+  )
+  return amap
 }
