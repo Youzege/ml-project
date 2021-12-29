@@ -27,6 +27,13 @@ const leafletRoutes = [
           navName: '定位'
         },
         component: () => import('@/views/Leaflet/components/Location')
+      },
+      {
+        path: 'change-map',
+        meta: {
+          navName: '切换图层'
+        },
+        component: () => import('@/views/Leaflet/components/ChangeMap')
       }
     ]
   }
