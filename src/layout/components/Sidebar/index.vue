@@ -30,5 +30,8 @@
 			margin-top: 25px;
 			text-align: center;
 		}
+		::v-deep .el-scrollbar__wrap {
+			overflow-x: hidden;
+		}
 	}
 </style>
