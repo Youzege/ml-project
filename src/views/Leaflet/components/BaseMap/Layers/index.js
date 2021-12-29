@@ -3,12 +3,18 @@
  */
 export const tiandituLayer = (L) => {
   const mapKey = '40e50cca6823476482e8721bb2eee900'
-  const tiandituLayer = L.tileLayer.chinaProvider('TianDiTu.Normal.Map', {
+  const tdtNormalM = L.tileLayer.chinaProvider('TianDiTu.Normal.Map', {
     key: mapKey,
     maxZoom: 18,
     minZoom: 5
   })
-  return tiandituLayer
+  const tdtNormalA = L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion.Map', {
+    key: mapKey,
+    maxZoom: 18,
+    minZoom: 5
+  })
+  const tdtNormal = L.layerGroup([tdtNormalM, tdtNormalA])
+  return tdtNormal
 }
 
 /**
