@@ -21,16 +21,16 @@
 				this.map = map
 			},
 			useLocation() {
-				this.map.locate({ setView: true, maxZoom: 18 })
-				this.map.on('locationfound', function (e) {
-					console.log(e)
-					const radius = e.accuracy / 2
-					L.marker(e.latlng).addTo(this).bindPopup('你在这个圈啦')
-					L.circle(e.latlng, radius).addTo(this)
-				})
-				this.map.on('locationerror', function (e) {
-					console.log(`定位出错! ---> ${e}`)
-				})
+				// 插件地址 https://github.com/domoritz/leaflet-locatecontrolhttps://github.com/domoritz/leaflet-locatecontrol
+				L.control
+					.locate({
+						position: 'topleft',
+						strings: {
+							title: '快定位我!'
+						}
+					})
+					.addTo(this.map)
+					.start()
 			}
 		},
 		mounted() {

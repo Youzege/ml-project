@@ -13,6 +13,8 @@
     "echarts": "^5.2.2",
     "element-ui": "^2.15.6",
     "leaflet": "^1.7.1",
+    "leaflet.chinatmsproviders": "^3.0.4",
+    "leaflet.locatecontrol": "^0.76.0",
     "leaflet.markercluster": "^1.5.3",
     "leaflet.wmts": "^1.0.2",
     "vue": "^2.6.11",

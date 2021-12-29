@@ -6181,6 +6181,16 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.6.1"
 
+"leaflet.chinatmsproviders@^3.0.4":
+  "integrity" "sha1-OgjdjEJnGGptWvn7MxopLzaFhas="
+  "resolved" "https://registry.npm.taobao.org/leaflet.chinatmsproviders/download/leaflet.chinatmsproviders-3.0.4.tgz"
+  "version" "3.0.4"
+
+"leaflet.locatecontrol@^0.76.0":
+  "integrity" "sha512-Mx8uiihBi8KrrW3LgblsNL/pS8HR0gj60m8VFDFrnhSvDuitChazc095XcMSscf/XqZW+TSqQMCTe+AUy/4/eA=="
+  "resolved" "https://registry.npmmirror.com/leaflet.locatecontrol/download/leaflet.locatecontrol-0.76.0.tgz"
+  "version" "0.76.0"
+
 "leaflet.markercluster@^1.5.3":
   "integrity" "sha512-vPTw/Bndq7eQHjLBVlWpnGeLa3t+3zGiuM7fJwCkiMFq+nmRuG3RI3f7f4N4TDX7T4NpbAXpR2+NTRSEGfCSeA=="
   "resolved" "https://registry.npmmirror.com/leaflet.markercluster/download/leaflet.markercluster-1.5.3.tgz"

@@ -3,13 +3,15 @@ import '@/styles/index.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import * as L from 'leaflet'
+import 'leaflet.chinatmsproviders'
+import 'leaflet.locatecontrol'
+import 'leaflet.locatecontrol/dist/L.Control.Locate.css'
 import 'leaflet.wmts'
 import 'leaflet/dist/leaflet.css'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
 Vue.config.productionTip = false
 
 // Vue.prototype.$L = L
