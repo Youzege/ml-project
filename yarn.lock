@@ -6181,6 +6181,11 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.6.1"
 
+"leaflet-minimap@^3.6.1":
+  "integrity" "sha512-6px8f6cfv1rKB6ACpL6bbUFGxipZOq4KsntJgBj9nOcW1RYa5+xFp8emOZwks9X+VtVVsQEwWwfgT1kTTL/LzA=="
+  "resolved" "https://registry.npmmirror.com/leaflet-minimap/download/leaflet-minimap-3.6.1.tgz"
+  "version" "3.6.1"
+
 "leaflet-mouse-position@^1.2.0":
   "integrity" "sha1-fL0+M3hpVwDGQ1ymA2H3xX2aIRM="
   "resolved" "https://registry.npmmirror.com/leaflet-mouse-position/download/leaflet-mouse-position-1.2.0.tgz"

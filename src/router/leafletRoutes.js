@@ -48,6 +48,13 @@ const leafletRoutes = [
           navName: '聚合效果'
         },
         component: () => import('@/views/Leaflet/components/MarkerCluster')
+      },
+      {
+        path: 'mini-map',
+        meta: {
+          navName: '小地图'
+        },
+        component: () => import('@/views/Leaflet/components/MiniMap')
       }
     ]
   }
