@@ -34,6 +34,13 @@ const leafletRoutes = [
           navName: '切换图层'
         },
         component: () => import('@/views/Leaflet/components/ChangeMap')
+      },
+      {
+        path: 'view-latlng',
+        meta: {
+          navName: '坐标显示'
+        },
+        component: () => import('@/views/Leaflet/components/ViewLatLng')
       }
     ]
   }

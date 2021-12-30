@@ -30,7 +30,7 @@
 				this.mapLayers = layers
 			},
 			changeMap(val) {
-				const tdt = this.mapLayers[1]
+				const tdt = this.mapLayers[2]
 				const amap = this.mapLayers[0]
 				switch (val) {
 					case 'amap':

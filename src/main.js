@@ -3,6 +3,8 @@ import '@/styles/index.scss'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import * as L from 'leaflet'
+import 'leaflet-mouse-position'
+import 'leaflet-mouse-position/src/L.Control.MousePosition.css'
 import 'leaflet.chinatmsproviders'
 import 'leaflet.locatecontrol'
 import 'leaflet.locatecontrol/dist/L.Control.Locate.css'
@@ -14,7 +16,6 @@ import router from './router'
 import store from './store'
 Vue.config.productionTip = false
 
-// Vue.prototype.$L = L
 Vue.L = Vue.prototype.$L = L
 /* leaflet icon 解决webpack编译成base64无法找到marker图标问题 */
 delete L.Icon.Default.prototype._getIconUrl
