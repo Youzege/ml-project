@@ -10,7 +10,7 @@ const leafletRoutes = [
       {
         path: 'base-map',
         meta: {
-          navName: '地图地图'
+          navName: '地图底图'
         },
         component: () => import('@/views/Leaflet/components/BaseMap')
       },

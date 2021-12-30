@@ -16,7 +16,6 @@
 			createMap() {
 				const tdt = tiandituLayer(L)
 				const amap = amapLayer(L)
-				console.log(amap)
 				const gdLayer = mlLayer(L)
 				this.mapLayers.push(...amap, tdt, gdLayer)
 
