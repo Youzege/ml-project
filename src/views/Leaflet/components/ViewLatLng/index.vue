@@ -7,7 +7,7 @@
 <script>
 	import BaseMap from './../BaseMap'
 	export default {
-		name: 'LMarker',
+		name: 'ViewLatLng',
 		components: {
 			BaseMap
 		},

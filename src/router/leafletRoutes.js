@@ -38,9 +38,16 @@ const leafletRoutes = [
       {
         path: 'view-latlng',
         meta: {
-          navName: '坐标显示'
+          navName: '鼠标坐标'
         },
         component: () => import('@/views/Leaflet/components/ViewLatLng')
+      },
+      {
+        path: 'marker-cluster',
+        meta: {
+          navName: '聚合效果'
+        },
+        component: () => import('@/views/Leaflet/components/MarkerCluster')
       }
     ]
   }
