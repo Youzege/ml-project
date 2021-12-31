@@ -1059,6 +1059,18 @@
   dependencies:
     "chalk" "^4.0.0"
 
+"@geoman-io/leaflet-geoman-free@^2.11.4":
+  "integrity" "sha512-uWfgaGDhrtoCMHdHi2oNVKb8WXFMQvyNnan1sS/+Yn5jMPuhijWFyAjy0G5kTCamXhGXg4vUvlEpiRSrBwewKg=="
+  "resolved" "https://registry.npmmirror.com/@geoman-io/leaflet-geoman-free/download/@geoman-io/leaflet-geoman-free-2.11.4.tgz"
+  "version" "2.11.4"
+  dependencies:
+    "@turf/boolean-contains" "^6.5.0"
+    "@turf/kinks" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/line-split" "^6.5.0"
+    "lodash" "4.17.21"
+    "polygon-clipping" "0.15.3"
+
 "@hapi/address@2.x.x":
   "integrity" "sha1-XWftQ/P9QaadS5/3tW58DR0KgeU="
   "resolved" "https://registry.npmmirror.com/@hapi/address/download/@hapi/address-2.1.4.tgz"
@@ -1161,6 +1173,156 @@
   "resolved" "https://registry.nlark.com/@soda/get-current-script/download/@soda/get-current-script-1.0.2.tgz"
   "version" "1.0.2"
 
+"@turf/bbox@*", "@turf/bbox@^6.5.0":
+  "integrity" "sha1-vsMKdEAZ6uQg2snqRvt1yqRNjcU="
+  "resolved" "https://registry.nlark.com/@turf/bbox/download/@turf/bbox-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/bearing@^6.5.0":
+  "integrity" "sha1-RioFPGxkRDS9tjazn49D+wzYV7A="
+  "resolved" "https://registry.nlark.com/@turf/bearing/download/@turf/bearing-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-contains@^6.5.0":
+  "integrity" "sha1-+ALnQy+1MQkkLVv1c5PvL1OEm78="
+  "resolved" "https://registry.nlark.com/@turf/boolean-contains/download/@turf/boolean-contains-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/bbox" "^6.5.0"
+    "@turf/boolean-point-in-polygon" "^6.5.0"
+    "@turf/boolean-point-on-line" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-point-in-polygon@^6.5.0":
+  "integrity" "sha1-bS6cid5M0uQ2UATB5RSQt3laY88="
+  "resolved" "https://registry.nlark.com/@turf/boolean-point-in-polygon/download/@turf/boolean-point-in-polygon-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/boolean-point-on-line@^6.5.0":
+  "integrity" "sha1-qO+nutiHYGdvOVr7mYB0a8Wzduk="
+  "resolved" "https://registry.nlark.com/@turf/boolean-point-on-line/download/@turf/boolean-point-on-line-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/destination@^6.5.0":
+  "integrity" "sha1-MKhHAvlnfQdhMOBEDTIjrlA/2uE="
+  "resolved" "https://registry.nlark.com/@turf/destination/download/@turf/destination-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/distance@^6.5.0":
+  "integrity" "sha1-IfBNX4boZNVOKr3hbzXBW082FJo="
+  "resolved" "https://registry.nlark.com/@turf/distance/download/@turf/distance-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+
+"@turf/helpers@^6.5.0", "@turf/helpers@6.x":
+  "integrity" "sha1-95rwlL1rjOftK9PgiahJPubK6C4="
+  "resolved" "https://registry.nlark.com/@turf/helpers/download/@turf/helpers-6.5.0.tgz"
+  "version" "6.5.0"
+
+"@turf/invariant@^6.5.0":
+  "integrity" "sha1-lwr8mIAj45x8yrI0G9Bped3HRj8="
+  "resolved" "https://registry.npmmirror.com/@turf/invariant/download/@turf/invariant-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/kinks@^6.5.0":
+  "integrity" "sha1-gOdFY2dTU2UBL2WM8amIs5oskgs="
+  "resolved" "https://registry.nlark.com/@turf/kinks/download/@turf/kinks-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/line-intersect@^6.5.0":
+  "integrity" "sha1-3qSDSLMMCTcV0hldLddSSu5M8CA="
+  "resolved" "https://registry.nlark.com/@turf/line-intersect/download/@turf/line-intersect-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-segment" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+    "geojson-rbush" "3.x"
+
+"@turf/line-segment@^6.5.0":
+  "integrity" "sha1-7nPz/8t8lWIDtk7ZZtlq84Ck3WU="
+  "resolved" "https://registry.nlark.com/@turf/line-segment/download/@turf/line-segment-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/line-split@^6.5.0":
+  "integrity" "sha1-EW1/v3FEV4eCJRh/WCDvmNt7AsI="
+  "resolved" "https://registry.nlark.com/@turf/line-split/download/@turf/line-split-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/bbox" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/line-segment" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+    "@turf/nearest-point-on-line" "^6.5.0"
+    "@turf/square" "^6.5.0"
+    "@turf/truncate" "^6.5.0"
+    "geojson-rbush" "3.x"
+
+"@turf/meta@^6.5.0", "@turf/meta@6.x":
+  "integrity" "sha1-tyXDZTyfQyEz6qBNNCH35R4EGMo="
+  "resolved" "https://registry.nlark.com/@turf/meta/download/@turf/meta-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+
+"@turf/nearest-point-on-line@^6.5.0":
+  "integrity" "sha1-jhzSzcC1rK9MjYs7M7sAjTy5nns="
+  "resolved" "https://registry.nlark.com/@turf/nearest-point-on-line/download/@turf/nearest-point-on-line-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/bearing" "^6.5.0"
+    "@turf/destination" "^6.5.0"
+    "@turf/distance" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+    "@turf/invariant" "^6.5.0"
+    "@turf/line-intersect" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
+"@turf/square@^6.5.0":
+  "integrity" "sha1-q0Pu+Z05w2FXq1uAQWu+uh9rISI="
+  "resolved" "https://registry.nlark.com/@turf/square/download/@turf/square-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/distance" "^6.5.0"
+    "@turf/helpers" "^6.5.0"
+
+"@turf/truncate@^6.5.0":
+  "integrity" "sha1-w6FsrZWfG+HFFWFX1VVcZLGRhdg="
+  "resolved" "https://registry.nlark.com/@turf/truncate/download/@turf/truncate-6.5.0.tgz"
+  "version" "6.5.0"
+  dependencies:
+    "@turf/helpers" "^6.5.0"
+    "@turf/meta" "^6.5.0"
+
 "@types/body-parser@*":
   "integrity" "sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g=="
   "resolved" "https://registry.npmmirror.com/@types/body-parser/download/@types/body-parser-1.19.2.tgz?cache=0&sync_timestamp=1637264988188&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40types%2Fbody-parser%2Fdownload%2F%40types%2Fbody-parser-1.19.2.tgz"
@@ -1202,6 +1364,11 @@
     "@types/express-serve-static-core" "^4.17.18"
     "@types/qs" "*"
     "@types/serve-static" "*"
+
+"@types/geojson@7946.0.8":
+  "integrity" "sha1-MHRK/bOF4pReIvOwM/iX92sfEso="
+  "resolved" "https://registry.npmmirror.com/@types/geojson/download/@types/geojson-7946.0.8.tgz"
+  "version" "7946.0.8"
 
 "@types/glob@^7.1.1":
   "integrity" "sha1-vBtb86qS8lvV3TnzXFc2G9zlsus="
@@ -4808,6 +4975,17 @@
   "resolved" "https://registry.npm.taobao.org/gensync/download/gensync-1.0.0-beta.2.tgz"
   "version" "1.0.0-beta.2"
 
+"geojson-rbush@3.x":
+  "integrity" "sha1-i1Q88NVvmbePrx2lK7ZqytbfwpA="
+  "resolved" "https://registry.nlark.com/geojson-rbush/download/geojson-rbush-3.2.0.tgz"
+  "version" "3.2.0"
+  dependencies:
+    "@turf/bbox" "*"
+    "@turf/helpers" "6.x"
+    "@turf/meta" "6.x"
+    "@types/geojson" "7946.0.8"
+    "rbush" "^3.0.1"
+
 "get-caller-file@^2.0.1", "get-caller-file@^2.0.5":
   "integrity" "sha1-T5RBKoLbMvNuOwuXQfipf+sDH34="
   "resolved" "https://registry.nlark.com/get-caller-file/download/get-caller-file-2.0.5.tgz"
@@ -6181,11 +6359,6 @@
     "picocolors" "^1.0.0"
     "shell-quote" "^1.6.1"
 
-"leaflet-draw@^1.0.4":
-  "integrity" "sha1-Rb6S83jtJT5yAv3tofzHGIUZjUY="
-  "resolved" "https://registry.nlark.com/leaflet-draw/download/leaflet-draw-1.0.4.tgz"
-  "version" "1.0.4"
-
 "leaflet-minimap@^3.6.1":
   "integrity" "sha512-6px8f6cfv1rKB6ACpL6bbUFGxipZOq4KsntJgBj9nOcW1RYa5+xFp8emOZwks9X+VtVVsQEwWwfgT1kTTL/LzA=="
   "resolved" "https://registry.npmmirror.com/leaflet-minimap/download/leaflet-minimap-3.6.1.tgz"
@@ -6218,7 +6391,7 @@
   dependencies:
     "leaflet" "1.6.0"
 
-"leaflet@^1.3.1", "leaflet@^1.7.1":
+"leaflet@^1.2.0", "leaflet@^1.3.1", "leaflet@^1.7.1":
   "integrity" "sha1-ENaEkW7f4b9B1oijuXEnwDIqKhk="
   "resolved" "https://registry.npmmirror.com/leaflet/download/leaflet-1.7.1.tgz"
   "version" "1.7.1"
@@ -6411,7 +6584,7 @@
   "resolved" "https://registry.nlark.com/lodash.uniq/download/lodash.uniq-4.5.0.tgz"
   "version" "4.5.0"
 
-"lodash@^4.17.11", "lodash@^4.17.12", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.20", "lodash@^4.17.21", "lodash@^4.17.3":
+"lodash@^4.17.11", "lodash@^4.17.12", "lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.20", "lodash@^4.17.21", "lodash@^4.17.3", "lodash@4.17.21":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmmirror.com/lodash/download/lodash-4.17.21.tgz"
   "version" "4.17.21"
@@ -7572,6 +7745,13 @@
   dependencies:
     "ts-pnp" "^1.1.6"
 
+"polygon-clipping@0.15.3":
+  "integrity" "sha1-AhWEBDhHC6Lp5lk2JeTqXBCHtLc="
+  "resolved" "https://registry.nlark.com/polygon-clipping/download/polygon-clipping-0.15.3.tgz"
+  "version" "0.15.3"
+  dependencies:
+    "splaytree" "^3.1.0"
+
 "portfinder@^1.0.26":
   "integrity" "sha1-Z8RiKFK9U3TdHdkA93n1NGL6x3g="
   "resolved" "https://registry.nlark.com/portfinder/download/portfinder-1.0.28.tgz"
@@ -8142,6 +8322,11 @@
   "resolved" "https://registry.npmmirror.com/quick-lru/download/quick-lru-4.0.1.tgz?cache=0&sync_timestamp=1637478611226&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fquick-lru%2Fdownload%2Fquick-lru-4.0.1.tgz"
   "version" "4.0.1"
 
+"quickselect@^2.0.0":
+  "integrity" "sha1-8ZaApIal7vtYEwPgI+mPqvJd0Bg="
+  "resolved" "https://registry.npm.taobao.org/quickselect/download/quickselect-2.0.0.tgz"
+  "version" "2.0.0"
+
 "randombytes@^2.0.0", "randombytes@^2.0.1", "randombytes@^2.0.5", "randombytes@^2.1.0":
   "integrity" "sha1-32+ENy8CcNxlzfYpE0mrekc9Tyo="
   "resolved" "https://registry.nlark.com/randombytes/download/randombytes-2.1.0.tgz"
@@ -8171,6 +8356,13 @@
     "http-errors" "1.8.1"
     "iconv-lite" "0.4.24"
     "unpipe" "1.0.0"
+
+"rbush@^3.0.1":
+  "integrity" "sha1-X6+op5s7mv3+UAhAOnIMwd6ILs8="
+  "resolved" "https://registry.npm.taobao.org/rbush/download/rbush-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "quickselect" "^2.0.0"
 
 "read-pkg-up@^7.0.1":
   "integrity" "sha1-86YTV1hFlzOuK5VjgFbhhU5+9Qc="
@@ -9079,6 +9271,11 @@
     "http-deceiver" "^1.2.7"
     "select-hose" "^2.0.0"
     "spdy-transport" "^3.0.0"
+
+"splaytree@^3.1.0":
+  "integrity" "sha1-F9SgEIpto2J1eWkLe4RyQeGN3sg="
+  "resolved" "https://registry.npm.taobao.org/splaytree/download/splaytree-3.1.0.tgz"
+  "version" "3.1.0"
 
 "split-string@^3.0.1", "split-string@^3.0.2":
   "integrity" "sha1-fLCd2jqGWFcFxks5pkZgOGguj+I="

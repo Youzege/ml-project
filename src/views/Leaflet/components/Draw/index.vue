@@ -19,9 +19,19 @@
 		methods: {
 			getMap(map) {
 				this.map = map
+			},
+			useDraw() {
+				const map = this.map
+				console.log(map)
+				map.pm.addControls({
+					position: 'topleft',
+					drawCircle: false
+				})
 			}
 		},
-		mounted() {}
+		mounted() {
+			this.useDraw()
+		}
 	}
 </script>
 
