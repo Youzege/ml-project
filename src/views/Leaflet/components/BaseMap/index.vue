@@ -24,7 +24,7 @@
 					maxZoom: 18,
 					minZoom: 5
 				}).setView([23.1520135, 113.3231695], 10) // 设置中心点，缩放级别)
-				this.mapLayers[1].addTo(this.map)
+				this.mapLayers[2].addTo(this.map)
 				this.$emit('lmap', this.map, this.mapLayers)
 			}
 		},
