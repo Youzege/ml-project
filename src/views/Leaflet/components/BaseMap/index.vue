@@ -3,23 +3,29 @@
 </template>
 
 <script>
-	import { tiandituLayer } from './Layers/tianditu'
+	import { amapLayer, mlLayer, tiandituLayer } from './Layers'
 	export default {
 		name: 'BaseMap',
 		data() {
 			return {
-				map: null
+				map: null,
+				mapLayers: []
 			}
 		},
 		methods: {
 			createMap() {
+				const tdt = tiandituLayer(L)
+				const amap = amapLayer(L)
+				const gdLayer = mlLayer(L)
+				this.mapLayers.push(...amap, tdt, gdLayer)
+
 				this.map = L.map('map', {
 					zoomControl: true,
 					maxZoom: 18,
-					minZoom: 2
-				}).setView([23.1520135, 113.3231695], 12) // 设置中心点，缩放级别)
-				tiandituLayer(L).addTo(this.map)
-				this.$emit('lmap', this.map)
+					minZoom: 5
+				}).setView([23.1520135, 113.3231695], 10) // 设置中心点，缩放级别)
+				this.mapLayers[1].addTo(this.map)
+				this.$emit('lmap', this.map, this.mapLayers)
 			}
 		},
 		mounted() {
@@ -31,6 +37,6 @@
 <style lang='scss' scoped>
 	#map {
 		width: 100%;
-		min-height: 550px;
+		min-height: 500px;
 	}
 </style>

@@ -1,7 +1,7 @@
 <template>
 	<div class="sidebar-container">
-		<h3 class="title"><i class="el-icon-s-platform"></i>前端可视化</h3>
-		<el-scrollbar>
+		<el-scrollbar style="height: 100%">
+			<h3 class="title"><i class="el-icon-s-platform"></i>前端可视化</h3>
 			<sidebar-menu />
 		</el-scrollbar>
 	</div>
@@ -29,6 +29,9 @@
 		.title {
 			margin-top: 25px;
 			text-align: center;
+		}
+		::v-deep .el-scrollbar__wrap {
+			overflow-x: hidden;
 		}
 	}
 </style>

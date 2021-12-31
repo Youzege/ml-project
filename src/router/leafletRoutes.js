@@ -10,7 +10,7 @@ const leafletRoutes = [
       {
         path: 'base-map',
         meta: {
-          navName: '地图地图'
+          navName: '地图底图'
         },
         component: () => import('@/views/Leaflet/components/BaseMap')
       },
@@ -27,6 +27,41 @@ const leafletRoutes = [
           navName: '定位'
         },
         component: () => import('@/views/Leaflet/components/Location')
+      },
+      {
+        path: 'change-map',
+        meta: {
+          navName: '切换图层'
+        },
+        component: () => import('@/views/Leaflet/components/ChangeMap')
+      },
+      {
+        path: 'view-latlng',
+        meta: {
+          navName: '鼠标坐标'
+        },
+        component: () => import('@/views/Leaflet/components/ViewLatLng')
+      },
+      {
+        path: 'marker-cluster',
+        meta: {
+          navName: '聚合效果'
+        },
+        component: () => import('@/views/Leaflet/components/MarkerCluster')
+      },
+      {
+        path: 'mini-map',
+        meta: {
+          navName: '小地图'
+        },
+        component: () => import('@/views/Leaflet/components/MiniMap')
+      },
+      {
+        path: 'draw',
+        meta: {
+          navName: '绘制图形'
+        },
+        component: () => import('@/views/Leaflet/components/Draw')
       }
     ]
   }

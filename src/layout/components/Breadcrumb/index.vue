@@ -26,7 +26,6 @@
 				if (routes.meta && routes.meta.navName) {
 					this.breadcrumbData = routes.matched.filter((item) => item.path !== '')
 				}
-				console.log(this.breadcrumbData)
 			}
 		},
 		watch: {

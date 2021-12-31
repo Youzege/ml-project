@@ -1,7 +1,19 @@
 <template>
 	<div class="navbar">
 		<div class="left-content">
-			<img class="dog-img" src="./../../assets/dog-icon.png" alt="dog" />
+			<el-tooltip
+				class="item"
+				effect="light"
+				content="返回主页"
+				placement="bottom-start"
+			>
+				<img
+					class="dog-img"
+					src="./../../assets/dog-icon.png"
+					alt="dog"
+					@click="toWelcome"
+				/>
+			</el-tooltip>
 			<span class="title">Leaflet & Echarts</span>
 		</div>
 		<div class="right-content">
@@ -25,7 +37,13 @@
 
 <script>
 	export default {
-		name: 'Navbar'
+		name: 'Navbar',
+		methods: {
+			toWelcome() {
+				this.$router.push('/')
+			}
+		},
+		mounted() {}
 	}
 </script>
 
@@ -48,6 +66,7 @@
 			.dog-img {
 				width: 60px;
 				height: 60px;
+				cursor: pointer;
 			}
 			.title {
 				font-size: 30px;
