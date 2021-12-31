@@ -9,7 +9,7 @@ const publicRoutes = [
       {
         path: '/welcome',
         meta: {
-          navName: '首页'
+          navName: '欢迎访问'
         },
         component: () => import('@/views/Welcome/index')
       }
