@@ -55,6 +55,13 @@ const leafletRoutes = [
           navName: '小地图'
         },
         component: () => import('@/views/Leaflet/components/MiniMap')
+      },
+      {
+        path: 'draw',
+        meta: {
+          navName: '绘制图形'
+        },
+        component: () => import('@/views/Leaflet/components/Draw')
       }
     ]
   }

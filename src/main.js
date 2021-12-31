@@ -8,6 +8,8 @@ import 'leaflet-minimap/dist/Control.MiniMap.min.css'
 import 'leaflet-mouse-position'
 import 'leaflet-mouse-position/src/L.Control.MousePosition.css'
 import 'leaflet.chinatmsproviders'
+import 'leaflet.draw.css'
+import 'leaflet.draw.js'
 import 'leaflet.locatecontrol'
 import 'leaflet.locatecontrol/dist/L.Control.Locate.css'
 // 引入 leaflet.markercluster

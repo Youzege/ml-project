@@ -22,9 +22,9 @@
 				this.map = L.map('map', {
 					zoomControl: true,
 					maxZoom: 18,
-					minZoom: 2
+					minZoom: 5
 				}).setView([23.1520135, 113.3231695], 10) // 设置中心点，缩放级别)
-				amap[1].addTo(this.map)
+				this.mapLayers[1].addTo(this.map)
 				this.$emit('lmap', this.map, this.mapLayers)
 			}
 		},
