@@ -19,7 +19,7 @@
 
 <style lang='scss' scoped>
 	.box-card {
-		min-height: calc(100vh - 110px);
+		height: calc(100vh - 110px);
 		overflow: hidden;
 	}
 </style>

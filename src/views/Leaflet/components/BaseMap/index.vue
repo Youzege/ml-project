@@ -4,6 +4,7 @@
 
 <script>
 	import { amapLayer, mlLayer, tiandituLayer } from './Layers'
+
 	export default {
 		name: 'BaseMap',
 		data() {
@@ -24,7 +25,8 @@
 					maxZoom: 18,
 					minZoom: 5
 				}).setView([23.1520135, 113.3231695], 10) // 设置中心点，缩放级别)
-				this.mapLayers[2].addTo(this.map)
+				this.mapLayers[0].addTo(this.map)
+
 				this.$emit('lmap', this.map, this.mapLayers)
 			}
 		},
@@ -37,6 +39,6 @@
 <style lang='scss' scoped>
 	#map {
 		width: 100%;
-		min-height: 500px;
+		height: calc(100vh - 200px);
 	}
 </style>

@@ -17,7 +17,7 @@
 <style lang='scss' scoped>
 	@import '~@/styles/variables.scss';
 	.app-main {
-		min-height: calc(100vh - 60px);
+		height: calc(100vh - 60px);
 		width: calc(100vw - 210px);
 		position: fixed;
 		left: $sideBarWidth;
