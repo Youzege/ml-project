@@ -4,6 +4,7 @@
 
 <script>
 	import { amapLayer, mlLayer, tiandituLayer } from './Layers'
+
 	export default {
 		name: 'BaseMap',
 		data() {
@@ -25,6 +26,7 @@
 					minZoom: 5
 				}).setView([23.1520135, 113.3231695], 10) // 设置中心点，缩放级别)
 				this.mapLayers[0].addTo(this.map)
+
 				this.$emit('lmap', this.map, this.mapLayers)
 			}
 		},

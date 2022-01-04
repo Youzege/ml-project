@@ -51,6 +51,7 @@ export const amapLayer = (L) => {
  * geoserver
  */
 export const mlLayer = (L) => {
+  console.log(gdData)
   const gdLayer = L.geoJSON(gdData, {
     style: function (feature) {
       return { color: feature.properties.color }
