@@ -43,6 +43,6 @@
 <style lang='scss' scoped>
 	.mychart {
 		width: 100%;
-		// height: calc(100vh - 200px);
+		height: calc(100vh - 200px);
 	}
 </style>
