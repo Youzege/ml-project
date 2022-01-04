@@ -62,6 +62,13 @@ const leafletRoutes = [
           navName: '绘制图形'
         },
         component: () => import('@/views/Leaflet/components/Draw')
+      },
+      {
+        path: 'geo-json',
+        meta: {
+          navName: '加载geoserver'
+        },
+        component: () => import('@/views/Leaflet/components/GeoJSON')
       }
     ]
   }
